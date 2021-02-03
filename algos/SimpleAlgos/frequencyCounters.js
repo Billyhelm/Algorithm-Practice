@@ -1,14 +1,6 @@
-/*
-Write a function called same, which accepts two arrays. The function should return
+/* Write a function called same, which accepts two arrays. The function should return
 true if every value in the array has it's corresponding value square in the 
-second array. The frequency of values must be the same.
-
-same([1,2,3], [4,1,9])  should be true
-same([1,2,3], [1,9]) should be false
-same([1,2,1], [4,4,1]) should be false
-*/
-
-
+second array. The frequency of values must be the same. */
 // This has a time complexity of N^2 because the index of loops through the array
 // basically has a loop nested inside of a loop
 function same(arr1, arr2){
@@ -53,7 +45,7 @@ function same2(arr1, arr2){
 }
 
 //refactoring the above to be cleaner
-function same3(arr1, arr2){
+function same(arr1, arr2){
     if(arr1.length !== arr2.length){
         return false
     }
